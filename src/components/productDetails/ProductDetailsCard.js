@@ -56,7 +56,14 @@ export default function ProductDetailsCard(prop) {
     setCart([{ productId: currProduct.productId, quantity: 1 }]);
     localStorage.setItem(
       "cart",
-      JSON.stringify([{ productId: currProduct.productId, quantity: 1 }])
+      JSON.stringify([
+        {
+          product: currProduct,
+          productId: currProduct.productId,
+          quantity: 1,
+          sku: currProduct.sku,
+        },
+      ])
     );
     navigate("/checkout");
   }
