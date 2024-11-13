@@ -53,7 +53,14 @@ export default function ProductDetailsCard(prop) {
   }
   const navigate = useNavigate();
   function handleBuyNow(currProduct) {
-    setCart([{ productId: currProduct.productId, quantity: 1 }]);
+    setCart([
+      {
+        product: currProduct,
+        productId: currProduct.productId,
+        quantity: 1,
+        sku: currProduct.sku,
+      },
+    ]);
     localStorage.setItem(
       "cart",
       JSON.stringify([
