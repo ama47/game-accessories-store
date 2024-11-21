@@ -72,7 +72,7 @@ This hierarchical structure allows customers to easily navigate the catalog and 
 
 ## Getting Started
 
-### 1. Clone the repository:
+### 1. Clone the repository
 
 ```bash
 git clone git@github.com:ama_47/sda-3-online-FE-repo.git
@@ -98,7 +98,7 @@ dotnet run
 
 The API is available at: `https://game-accessories-api.onrender.com`
 
-### 3. Run web server:
+### 4. Run web server:
 
 Now, you run the website by:
 
